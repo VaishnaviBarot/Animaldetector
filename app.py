@@ -11,7 +11,7 @@ from tensorflow.keras.preprocessing.image import load_img , img_to_array
 
 app = Flask(__name__)
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
-model = load_model('https://animal-detector.onrender.com/Animal1.hdf5')
+model = load_model('Animal1.hdf5')
 
 
 ALLOWED_EXT = set(['jpg' , 'jpeg' , 'png' , 'jfif'])
