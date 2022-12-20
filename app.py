@@ -121,8 +121,8 @@ def success():
                 error = 'This image from this site is not accesible or inappropriate input'
 
             if(len(error) == 0):
-                # return  render_template('success.html' , img  = img , predictions = predictions)
-                return make_response(pred, 200)
+                return  render_template('success.html' , img  = img , predictions = predictions)
+                # return make_response(pred, 200)
             else:
                 return render_template('index.html' , error = error) 
 
@@ -154,8 +154,8 @@ def success():
 
             headers = {"content -Type":"application/json"}
             if(len(error) == 0):
-                # return  render_template('success.html' , img  = img , predictions = predictions)
-                return make_response(pred, 200)
+                return  render_template('success.html' , img  = img , predictions = predictions)
+                # return make_response(pred, 200)?
             else:
                 return render_template('index.html' , error = error)
 
