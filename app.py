@@ -152,7 +152,7 @@ def success():
             else:
                 error = "Please upload images of jpg , jpeg and png extension only"
 
-            headers = {"content -Type":"application/json"}
+            # headers = {"content -Type":"application/json"}
             if(len(error) == 0):
                 return  render_template('success.html' , img  = img , predictions = predictions)
                 # return make_response(pred, 200)?
