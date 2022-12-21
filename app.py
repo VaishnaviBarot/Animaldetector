@@ -114,9 +114,7 @@ def success():
                 pred = {
                     "status2":status
                     }
-
-            except EOFError as e:
-                print(e)
+                
             except Exception as e : 
                 print(str(e))
                 error = 'This image from this site is not accesible or inappropriate input'
