@@ -84,7 +84,7 @@ def home():
 def success():
     error = ''
     language = request.args.get('language')
-    target_img=os.path.join(os.getcwd(),'static/images')
+    target_img=os.path.join('static/images')
     if request.method == 'POST':
         if(request.form):
             link = request.form.get('link')
